@@ -1,8 +1,8 @@
 # Creating API with Spring Boot 
 
 ## Notes
-[Official Spring Boot](https://spring.io/guides/gs/spring-boot/) Documentation
-[Simple Spring Boot Article](https://www.marcobehler.com/guides/spring-boot)
+* [Official Spring Boot](https://spring.io/guides/gs/spring-boot/) Documentation
+* [Simple Spring Boot Article](https://www.marcobehler.com/guides/spring-boot)
 
 ### 1. Introducing Spring Boot
 The Spring team decided they wanted to provide developers with some utilities which relatively automate the configuration procedures and speeds up the process of building and deploying Spring applications, so they invented Spring Boot.
