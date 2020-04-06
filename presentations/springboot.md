@@ -1,6 +1,57 @@
 # Creating API with Spring Boot 
 
 ## Notes
+[Official Spring Boot](https://spring.io/guides/gs/spring-boot/) Documentation
+
+### 1. Introducing Spring Boot
+The Spring team decided they wanted to provide developers with some utilities which relatively automate the configuration procedures and speeds up the process of building and deploying Spring applications, so they invented Spring Boot.
+
+*Spring Boot* is a utility project which aims to make it easy to build Spring-based, production-ready applications and services with minimum fuss. It provides the shortest way to get a Spring web application up and running with the smallest line of code/configuration out-of-the-box.
+
+### 2. Spring Boot Features
+There are a bunch of features specific to Spring Boot, but three of my favorites are dependency management, auto-configuration, and embedded servlet containers.
+
+#### 2.1. Easy Dependency Management
+In order to speed up the dependency management process, Spring Boot implicitly packages the required compatible third-party dependencies for each type of Spring application and exposes them to the developer using starters.
+
+Starters are a set of convenient dependency descriptors that you can include in your application. You get a one-stop-shop for all the Spring and related technology that you need, without having to hunt through sample code and copy paste loads of dependency descriptors.
+
+For example, if you want to get started using Spring and JPA for database access, just include the spring-boot-starter-data-jpa dependency in your project, and you are good to go (no need to hunt for compatible database drivers and Hibernate libraries).
+
+Also, if you want to create a Spring web application, just add spring-boot-starter-web dependency, and, by default, this will pull all the commonly used libraries for developing Spring MVC applications such as spring-webmvc, jackson-json, validation-api, and Tomcat.
+
+In other words, Spring Boot gathers all the common dependencies and defines them in one place and allows the developer to use them instead of reinventing the wheel each time they create a new application.
+
+Therefore, pom.xml becomes much smaller than the one used with traditional Spring applications.
+
+Check the docs to get familiar with all Spring Boot starters.
+
+#### 2.2. Auto Configuration
+The second awesome feature of Spring Boot is the auto-configuration.
+
+After you select the appropriate starter, Spring Boot attempts to automatically configure your Spring application based on the jar dependencies that you have added.
+
+For example, if you add spring-boot-starter-web, Spring Boot automatically configures the commonly registered beans like DispatcherServlet, ResourceHandlers, MessageSource.
+
+Also, if you’re using spring-boot-starter-jdbc, Spring Boot automatically registers the DataSource, EntityManagerFactory, and TransactionManager beans and reads the connection details from the application.properties file.
+
+In case you don't intend to use a database and you don't provide any manual connection details, Spring Boot will auto-configure an in-memory database without any further configuration on your part whenever it finds an H2 or HSQL library on the build path.
+
+This is totally configurable and can be overridden anytime by custom configuration.
+
+#### 2.3 Embedded Servlet Container Support
+Each Spring Boot web application includes an embedded web server by default, check this for the list of embedded servlet containers supported out of the box.
+
+Developers don’t need to worry about setting up a servlet container and deploying the application on it. The application can be run by itself as a runnable jar file using its embedded server.
+
+If you need to use a separate HTTP server, you just need to exclude the default dependencies, Spring Boot provides separate starters for HTTP servers to help make this process as easy as possible.
+
+Creating standalone web applications with embedded servers is not only convenient for development but also a legitimate solution for enterprise-level applications, and is increasingly useful in the microservices world. Being able to wrap an entire service (for example, user authentication) in a standalone and fully-deployable artifact that exposes an API makes distribution and deployment much quicker and easier to manage.
+
+
+<br></br><br></br>
+-----------------------------------------------------------------------------------------------
+<br></br><br></br>
 
 ## Lab 1 Spring Boot
 
@@ -93,6 +144,6 @@ Here are the operations that we will look to implement:
 * You will probably want to factor out the Tasks features from the actual controller. 
 This will allow you to test independently. 
 
-You can test your API from your IDE or install a free tool like [Restlet](https://chrome.google.com/webstore/detail/restlet-client-rest-api-t/aejoelaoggembcahagimdiliamlcdmfm?hl=en) 
+You can test your API from your IDE or install a free tool like [Tabbed Postman - REST Client](https://chrome.google.com/webstore/detail/tabbed-postman-rest-clien/coohjcphdfgbiolnekdpbcijmhambjff) 
 into your browser. 
  
