@@ -2,6 +2,7 @@
 
 ## Notes
 [Official Spring Boot](https://spring.io/guides/gs/spring-boot/) Documentation
+[Simple Spring Boot Article](https://www.marcobehler.com/guides/spring-boot)
 
 ### 1. Introducing Spring Boot
 The Spring team decided they wanted to provide developers with some utilities which relatively automate the configuration procedures and speeds up the process of building and deploying Spring applications, so they invented Spring Boot.
@@ -49,9 +50,8 @@ If you need to use a separate HTTP server, you just need to exclude the default 
 Creating standalone web applications with embedded servers is not only convenient for development but also a legitimate solution for enterprise-level applications, and is increasingly useful in the microservices world. Being able to wrap an entire service (for example, user authentication) in a standalone and fully-deployable artifact that exposes an API makes distribution and deployment much quicker and easier to manage.
 
 
-<br></br> 
 -----------------------------------------------------------------------------------------------
-<br></br>
+
 
 ## Lab 1 Spring Boot
 
