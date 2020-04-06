@@ -49,9 +49,9 @@ If you need to use a separate HTTP server, you just need to exclude the default 
 Creating standalone web applications with embedded servers is not only convenient for development but also a legitimate solution for enterprise-level applications, and is increasingly useful in the microservices world. Being able to wrap an entire service (for example, user authentication) in a standalone and fully-deployable artifact that exposes an API makes distribution and deployment much quicker and easier to manage.
 
 
-<br></br><br></br>
+<br></br> 
 -----------------------------------------------------------------------------------------------
-<br></br><br></br>
+<br></br>
 
 ## Lab 1 Spring Boot
 
