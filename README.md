@@ -24,7 +24,7 @@ The workshop is a mixture of hands on exercises and taught mini sessions to intr
 |  Data Serialization & Deserialization JSON   | [Notes & Labs ](/presentations/json.md)         |  
 |  Deploy APIs (Heroku)                        | [Notes & Labs ](/presentations/heroku.md)       | 
 |  Consuming APIs               | [Notes & Labs ](/presentations/consumeapi.md)   |  
-|  Working Databases (Postgres & MongoDB)      | [Notes & Labs ](/presentations/databases.md)    |  
+|  Working Databases (Postgres)      | [Notes & Labs ](/presentations/databases.md)    |  
 |  Docker Basics                               | [Notes & Labs ](/presentations/docker.md)       |  
 
 
