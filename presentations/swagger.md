@@ -1,12 +1,14 @@
 # APIs Documentation with Swagger
-[Swagger UI](https://swagger.io/tools/swagger-ui/)
-[Advance Swagger](https://springfox.github.io/springfox/docs/current/)
 
-## 1. Introduction
+## Notes
+* [Swagger UI](https://swagger.io/tools/swagger-ui/)
+* [Advance Swagger](https://springfox.github.io/springfox/docs/current/)
+* [Good Read on Swagger Documentation](https://www.baeldung.com/swagger-2-documentation-for-spring-rest-api)
+
+### 1. Introduction
 Swagger UI allows anyone — be it your development team or your end consumers — to visualize and interact with the API’s resources without having any of the implementation logic in place. It’s automatically generated from your OpenAPI (formerly known as Swagger) Specification, with the visual documentation making it easy for back end implementation and client side consumption. <br/>
-The Springfox suite of java libraries are all about automating the generation of machine and human readable specifications for JSON APIs written using the spring family of projects. Springfox works by examining an application, once, at runtime to infer API semantics based on spring configurations, class structure and various compile time java Annotations.
-<br/>
-[Good Read on Swagger Documentation](https://www.baeldung.com/swagger-2-documentation-for-spring-rest-api)
+The Springfox suite of java libraries are all about automating the generation of machine and human readable specifications for JSON APIs written using the spring family of projects. Springfox works by examining an application, once, at runtime to infer API semantics based on spring configurations, class structure and various compile time java Annotations. 
+
 -----------------------------------------------------------------------------------------------
  
 ## Lab 2 Swagger Documentation
