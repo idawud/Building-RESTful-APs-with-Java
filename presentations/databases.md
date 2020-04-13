@@ -84,7 +84,7 @@ Next is autowiring the JdbcTemplate to the TodoStage class which will automatica
 ```
 @Autowired
     private JdbcTemplate jdbcTemplate;
-```
-![JDBCTemplate](/presentations/images/jdbcTemplate.png.png)
+``` 
+![Tempalte ]( /presentations/images/jdbcTemplate.png)
 
 We'll refactor all the function to work with the db instead of the Map variable.
