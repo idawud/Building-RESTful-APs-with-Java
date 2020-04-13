@@ -26,7 +26,7 @@ The `build.gradle` in the root of the project contains all the external depencie
 ### Step 2 - Adding Swagger Annotations
 1. Add the `@EnableSwagger2` annotation to your main Class, to eable swagger on thhis projects.
 ![Swagger Enable]( /presentations/images/swagger-enable.png)
-2. Add the `@Api` annotation to the controller and `@ApiOperation(&lg; description &gt;)` to the endpoint functions with the desription of what the endpoint does.
+2. Add the `@Api` annotation to the controller and `@ApiOperation(< description >)` to the endpoint functions with the desription of what the endpoint does.
 ![Swagger Endpoint Trace]( /presentations/images/swagger-api.png)
 
 ### Step 3 -  Swagger Page
