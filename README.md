@@ -6,6 +6,8 @@ Building APIs using Spring and other tooling can be done by clicking a couple of
 However as with any process (regardless of speed) we want to ensure quality in the product we are building.
 The workshop is a mixture of hands on exercises and taught mini sessions to introduce the concepts behind building quality APIs.
 
+[Lab & Notes Code](https://github.com/idawud/Building-RESTful-APs-with-Java-Code)
+
 ## Prerequisites  
 
 * Basic knowledge of java
