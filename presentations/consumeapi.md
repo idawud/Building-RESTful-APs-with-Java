@@ -7,7 +7,7 @@
 
 * [GET and POST requests using Python](https://www.geeksforgeeks.org/get-post-requests-using-python/)
 
-* [Cross-Origin Resource Sharing (CORS)]( https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
+* [Cross-Origin Resource Sharing CORS]( https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
 
 * [How the Access-Control-Allow-Origin Header Works](https://medium.com/@dtkatz/3-ways-to-fix-the-cors-error-and-how-access-control-allow-origin-works-d97d55946d9)
 
@@ -73,11 +73,20 @@ Running this piece of code also yield the same result.
 ![Consume with Python]( /presentations/images/pythonconsume.png)
 
 ### JavaScript
+Right click anywhere on your browser and click on inspect then console.<br>
+You can now Copy & Paste this piece of code to run it.
 ``` JavaScript
 fetch('https://javarestfulapi.herokuapp.com/todos')
     .then((response) => { return response.json(); })
     .then((data) => { console.log(data); });
 ```
+Running it for the first time we get an error due to [CORS]( https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS). 
+![Consume with Python]( /presentations/images/cors.png)
 
-Now Running this piece of code also yield the same result.
+To fix it we'll need to add single annotation to a web server. add `@CrossOrigin(origins = "*")` to our rest contoller.
+![Consume with Python]( /presentations/images/cors-enable.png)
+
+Now push your code to GitHub and re-deploy the app.
+
+Now Running it again it also yield the same result.
 ![Consume with JavaScript]( /presentations/images/javaScript.png)
