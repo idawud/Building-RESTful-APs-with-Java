@@ -19,19 +19,19 @@ The `build.gradle` in the root of the project contains all the external depencie
 
 ``` Dependency
       compile("io.springfox:springfox-swagger2:2.9.2")
-	  compile("io.springfox:springfox-swagger-ui:2.9.2")
+	compile("io.springfox:springfox-swagger-ui:2.9.2")
 ```
 ![Swagger Dependency]( /presentations/images/swagger-dep.png)
 
 ### Step 2 - Adding Swagger Annotations
-1. Add the `@EnableSwagger2` annotation to your main Class, to eable swagger on thhis projects.
+1. Add the `@EnableSwagger2` annotation to your main Class, to eable swagger on this projects.
 ![Swagger Enable]( /presentations/images/swagger-enable.png)
 2. Add the `@Api` annotation to the controller and `@ApiOperation(< description >)` to the endpoint functions with the desription of what the endpoint does.
 ![Swagger Endpoint Trace]( /presentations/images/swagger-api.png)
 
 ### Step 3 -  Swagger Page
-Start or REstart your server and navigate to [localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
+1. Start or Restart your server and navigate to [localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
 ![Swagger Page]( /presentations/images/swagger-page.png)
 
-Click on the `todo-controller` and you'll see all the endpoints under this controller. From here we can do all the stuffs we did with POSTMAN.
+2. Click on the `todo-controller` and you'll see all the endpoints under this controller. From here we can do all the stuffs we did with POSTMAN.
 ![Swagger Todo Endpoints]( /presentations/images/swagger-todo-endpoints.png)
