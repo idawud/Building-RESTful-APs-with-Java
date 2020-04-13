@@ -87,7 +87,7 @@ Alternatively, use this [link](https://start.spring.io/#!type=gradle-project&lan
 
 Import the project into your IDE by opening the the `build.gradle` file as a project.
 
-![Intellij Project Import](01B-sample-import.png)
+![Intellij Project Import]( /presentations/images/intellij.png)
 
 On hitting OK the project will most likely download the internet (or at least all the required dependencies). 
 Once this has completed your baseline project is ready. 
@@ -100,7 +100,7 @@ In the project we will create a small REST controller.
 Spring boot works by scanning classes and looking for annotations it recognises.
 Based on these annotations it will be opinionated and choose what it thinks the right set of configuration should look like.
 
-Usually controllers would live in their own package, you should create the `WorkshopController.java` in your project.
+Usually controllers would live in their own package, you should create the `APIController.java` in your project.
 
 ```java
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -108,21 +108,20 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class WorkshopController {
+public class APIController {
 
-    @RequestMapping("/hello")
-    @ResponseBody
-    public String helloWorld() {
-        return "Hello World";
-    }
-
+        @RequestMapping("/hello")
+        @ResponseBody
+        public String helloWorld() {
+            return "Hello World";
+        }
 }
 ```
 
-We can now start our project by running `ApiworkshopApplication.java` (or the class which contains the main method). 
+We can now start our project by running `RestfulApiApplication.java` (or the class which contains the main method). 
 In a couple of seconds you should be able to visit [http://localhost:8080/hello](http://localhost:8080/hello)
 
-![Hello World](01C-hello-world.png)
+![Hello World](/presentations/images/hello-world.png)
 
 ### Step 4 - Building a (slightly) more advanced API
 
