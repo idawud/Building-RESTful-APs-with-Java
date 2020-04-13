@@ -9,7 +9,8 @@ The workshop is a mixture of hands on exercises and taught mini sessions to intr
 ## Prerequisites  
 
 * Basic knowledge of java
-* IDE installed (Intellij recommended)  
+* IDE installed (Intellij recommended)
+* git installed [Git Download](https://git-scm.com/downloads)
 
 ## Introduction Sessions
 
