@@ -26,10 +26,6 @@ With SQL, analysts do not need to know where the order table resides on disk, ho
  
 ## Lab 1 Databases
 Since have our deployment on Heroku, we can take advantage of their free Postgres database add-on.
-``` build.gradle
-implementation 'org.springframework.boot:spring-boot-starter-jdbc'
-runtimeOnly 'org.postgresql:postgresql'
-```
 
 ### Step 1 - Add Heroku Postgres
 1. Click on the Resources Tab and Search for `Heroku Postgres` and select it.
@@ -46,8 +42,16 @@ runtimeOnly 'org.postgresql:postgresql'
 
 
 ### Step 2 - Add JDBC Dependencies
+To work with postgre with need 2 dependencies postgres and JDBC to execute the queries.
+``` build.gradle
+implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+runtimeOnly 'org.postgresql:postgresql'
+```
+
+![JDBC Deps](/presentations/images/DBlibs.png) 
 
 ### Step 3 - application.properties config
+The application.properties keeps config which spring boot uses mostly for dependency Injections. Here to want provide the values in the Environment Variables we setted on heroku. The `${}` means its reading from env or we can set the values here direct but it isnt adviceasble.
 ``` application.properties
 spring.datasource.url=${ DATABASE_URL}
 spring.datasource.username=${ DATABASE_USERNAME}
@@ -56,6 +60,7 @@ spring.datasource.driver-class-name=org.postgresql.Driver
 ```
 
 ### Step 4 - DataSource Configuration
+Next we create a class with Configuration anotation which reads the env values and creates a datasource for us i.e. the database connection.
 ```Configuration
 @Configuration
 public class DatabaseConfig {
@@ -75,3 +80,11 @@ public class DatabaseConfig {
 ```
 
 ### Step 5 - JdbcTemplate and SQL Queries
+Next is autowiring the JdbcTemplate to the TodoStage class which will automatically work with our DataSource Bean and allow to execute the queries we want. 
+```
+@Autowired
+    private JdbcTemplate jdbcTemplate;
+```
+![JDBCTemplate](/presentations/images/jdbcTemplate.png.png)
+
+We'll refactor all the function to work with the db instead of the Map variable.
