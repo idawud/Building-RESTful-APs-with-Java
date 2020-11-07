@@ -33,6 +33,5 @@ The workshop is a mixture of hands on exercises and taught mini sessions to intr
 
 Any feedback or suggestions are more than welcome, please submit either an issue or PR. 
 
-### Instructors
+### Instructor
 - #### Dawud Ibrahim Ismail <dawud.ismail@turntabl.io>
-- Franklin Wae Luther <franklin.luther@turntabl.io>
